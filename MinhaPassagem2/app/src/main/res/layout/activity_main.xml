@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activityBackgroud"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginVertical="50dp"
+        android:layout_marginHorizontal="20dp"
+        android:src="@mipmap/web_hi_res_512" />
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/minha_passagem"
+        android:textColor="@color/TextColorButton"
+        android:textSize="@dimen/TitleSuper" />
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/changeActivity"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/prosseguir"
+        android:textSize="@dimen/Buttons"
+        style="@style/RaisedButton"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        style="@style/Base.TextAppearance.AppCompat.Medium.Inverse"
+        android:textSize="@dimen/TitleDimen"
+        android:text="@string/duvidas_sugest" />
+
+</android.widget.LinearLayout>

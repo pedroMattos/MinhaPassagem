@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context=".SecondActivity">
+    <include layout="@layout/tool_bar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatImageView
+             android:layout_width="150dp"
+             android:layout_height="150dp"
+             android:layout_gravity="center"
+             android:background="@mipmap/web_hi_res_512"/>
+
+            <Switch
+                android:id="@+id/prefsAtiv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="Ativar preferências"
+                android:textAlignment="center"
+                android:textColor="@color/TextColorButton"
+                android:textSize="@dimen/TitleDimen" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="4dp">
+                    <TextView
+                        android:id="@+id/func"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/hintText"
+                        android:textColor="@color/TextColorButton"
+                        android:layout_marginTop="10dp"
+                        android:textSize="@dimen/TitleDimen" />
+                    <Button
+                        android:id="@+id/infoActivity"
+                        android:layout_width="32dp"
+                        android:layout_height="34dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:background="@drawable/ic_help"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/valPasse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Valor da passagem:"
+                    android:textColor="@color/TextColorButton"
+                    android:textSize="@dimen/TitleDimen" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/layoutEditV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:elevation="@dimen/Elevation"
+                    android:layout_marginTop="5dp">
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/passValue"
+                        android:layout_width="207dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/shape_edittext"
+                        android:hint="@string/valor"
+                        android:elevation="@dimen/Elevation"
+                        android:inputType="numberDecimal"
+                        android:padding="5dp" />
+                </android.support.design.widget.TextInputLayout>
+                <TextView
+                    android:id="@+id/valDia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Passagens por dia:"
+                    android:textColor="@color/TextColorButton"
+                    android:textSize="@dimen/TitleDimen" />
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/layoutEditP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:elevation="@dimen/Elevation"
+                    android:layout_marginTop="5dp">
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/passQuant"
+                        android:layout_width="207dp"
+                        android:padding="5dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_edittext"
+                        android:hint="@string/passagens"
+                        android:inputType="numberDecimal" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <android.support.design.button.MaterialButton
+                        android:id="@+id/buttonCalc"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/Buttons"
+                        android:fontFamily="monospace"
+                        android:elevation="@dimen/Elevation"
+                        style="@style/RaisedButton2"
+                        android:text="@string/calcular"/>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/result"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@color/TextColorButton"
+                    android:textSize="@dimen/TitleDimen" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</android.widget.LinearLayout>

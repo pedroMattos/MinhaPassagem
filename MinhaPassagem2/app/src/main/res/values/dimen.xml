@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="TitleDimen">20sp</dimen>
+    <dimen name="Buttons">15sp</dimen>
+    <dimen name="TitleSuper">30sp</dimen>
+    <dimen name="MediumTitle">25sp</dimen>
+    <dimen name="Elevation">8dp</dimen>
+</resources>

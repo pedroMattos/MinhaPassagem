@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#01508D</color>
+    <color name="colorPrimaryDark">#37566E</color>
+    <color name="colorAccent">#16D4C2</color>
+    <color name="activityBackgroud">#37566E</color>
+    <color name="TextStyle">#212121</color>
+    <color name="TextStyleLight">#FFFFFF</color>
+    <color name="TextColorButton">#FFFFFF</color>
+    <color name="editTextColor">#46C8E6C9</color>
+    <color name="linkStyle">#A10501</color>
+</resources>

@@ -1,0 +1,33 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorLink">@color/linkStyle</item>
+        <item name="colorControlHighlight">@color/editTextColor</item>
+
+    </style>
+    <style name="RaisedButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:textColor">@color/TextColorButton</item>
+    </style>
+    <style name="RaisedButton2" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:textColor">@color/TextColorButton</item>
+        <item name="android:backgroundTint">@color/colorPrimaryDark</item>
+    </style>
+    <style name="ButtonSolid" parent="Widget.AppCompat.Button.Borderless.Colored">
+        <item name="android:text">@color/TextStyleLight</item>
+        <item name="android:backgroundTint">@color/colorAccent</item>
+    </style>
+    <style name="ButtonInvert" parent="Widget.AppCompat.Button.Colored">
+        <item name="editTextColor">@color/TextColorButton</item>
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+</resources>
